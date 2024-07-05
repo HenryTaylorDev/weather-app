@@ -31,6 +31,12 @@ const Weather = () => {
     }
   };
 
+  // TODO
+  // Select weather data from the response and display it in the component.
+  // temp, feels like, pressure, humidity, wind speed, weather description, rain
+  // Display the weather icon with each metric
+  // Detect the user's location and display the weather for that location by calling the getCurrentPosition method of the Geolocation API
+
   return (
     <div>
       <input

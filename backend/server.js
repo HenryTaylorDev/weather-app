@@ -7,12 +7,6 @@ app.use(cors());
 
 app.use("/api/weather", weatherRoutes);
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
-});
-
 const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
