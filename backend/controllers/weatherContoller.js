@@ -1,6 +1,7 @@
 const weatherService = require("../services/weatherService");
 
 exports.getCurrentWeather = async (req, res) => {
+  console.log(req.query);
   const { city } = req.query;
   try {
     const weatherData = await weatherService.fetchCurrentWeather(city);
